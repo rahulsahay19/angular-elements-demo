@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Elements Demo</title>
+
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+
+        First Name:
+        <input type="text" ng-model="firstName">
+        <br> Last Name:
+        <input type="text" ng-model="lastName">
+        <br>
+        <br> Full Name: {{firstName + " " + lastName}}
+        <br>
+        <br>
+        <app-sample 
+        name="{{firstName}} {{lastName}}"
+        url="https://myview.rahulnivi.net"
+        size="2">
+      </app-sample>
+    </div>
+
+    <script src="ng-elements.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="main-ctrl.js"></script>
+</body>
+
+</html>
